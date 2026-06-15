@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(249, 142, 201);
+    color: #f2e2e8;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(255, 105, 180);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: rgba(255, 105, 180, 0.2);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-quote {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #f6d6d6;
+}
+
+/* Section Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-section, .contact-form-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(255, 105, 180, 0.1);
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.about-section h2, .contact-form-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-section p, .contact-form-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .btn {
+    padding: 10px 20px;
+    background-color: rgb(255, 105, 180);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.contact-form .btn:hover {
+    background-color: #ff69b4;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(243, 208, 208);
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+}
+.btn {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); 
+    
+}
+.login-btn {
+    background: linear-gradient(45deg, #FF69B4, #FF1493); 
+    margin-top: -320px;
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #FF1493, #FF69B4); 
+    box-shadow: 0px 8px 20px rgba(255, 105, 180, 0.5);
+    transform: scale(1.05);
+}
+
+.signup-btn {
+    background: linear-gradient(45deg, #6A5ACD, #483D8B);
+    margin-top: -320px;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(45deg, #483D8B, #6A5ACD); 
+    box-shadow: 0px 8px 20px rgba(106, 90, 205, 0.5);
+    transform: scale(1.05);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="conatct.html">Contact</a></li>
+            </ul>
+            <div class="button-container">
+                <a href="pages/login.html" class="btn login-btn">Log In</a>
+                <a href="pages/sing up.html" class="btn signup-btn">Sign Up</a>
+            </div>
+    
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>À propos de Beauty Life</h1>
+        <p class="hero-quote">"Découvrez une beauté naturelle grâce à nos produits qui respectent votre peau et notre planète."</p>
+    </section>
+    <section class="about-section">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>At Beauty Life, we believe that everyone deserves to feel beautiful and confident. Our products are made with natural ingredients to ensure safe and effective results.</p>
+            <h2>Our Mission</h2>
+            <p>To provide skincare solutions that nourish, hydrate, and illuminate your skin while preserving the environment.</p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><img src="/img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/webweaver08/"><img src="/img/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/img/twitter.png" alt="Twitter"></a>
+        </div>
+    <p>&copy; 2024 Beauty Life. All rights reserved.</p>
+    <P> devloped by oumnia selmane</P>
+    </footer>
+</body>
+</html>

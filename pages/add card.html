@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Information</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        document.getElementById('payment-form').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+    alert('Payment information submitted successfully!');
+});
+
+    </script>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #ffeef8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6f91;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.payment-info {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ff6f91;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff4a78;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6f91;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.btn {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); 
+    
+    
+}
+.login-btn {
+    background: linear-gradient(45deg, #FF69B4, #FF1493); 
+    margin-top: -320px;
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #FF1493, #FF69B4); 
+    box-shadow: 0px 8px 20px rgba(255, 105, 180, 0.5);
+    transform: scale(1.05);
+}
+
+.signup-btn {
+    background: linear-gradient(45deg, #6A5ACD, #483D8B);
+    margin-top: -320px;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(45deg, #483D8B, #6A5ACD); 
+    box-shadow: 0px 8px 20px rgba(106, 90, 205, 0.5);
+    transform: scale(1.05);
+}
+  
+    </style>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="/index.html">Accueil</a></li>
+                <li><a href="propos.html">À propos</a></li>
+                <li><a href="conatct.html">Contact</a></li>
+            </ul>
+            <div class="button-container">
+                <a href="login.html" class="btn login-btn">Log In</a>
+                <a href="sing up.html" class="btn signup-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment-info">
+            <h2>Payment Information</h2>
+            <form id="payment-form">
+                <div class="form-group">
+                    <label for="card-name">Name on Card</label>
+                    <input type="text" id="card-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry-date">Expiry Date (MM/YY)</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" required>
+                </div>
+                <button type="submit">Submit Payment</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Beauty Life. All rights reserved.</p>
+        <P> devloped by oumnia selmane</P>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shiny skin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(249, 142, 201); 
+    color: #f2e2e8; 
+}
+header {
+    background: url(/img/m3.webp);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    min-height: 100vh; 
+    overflow-x: hidden;
+    color: white;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    margin-top: -20px;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;  
+    
+}
+
+.nav-links li {
+    margin-left: 2rem;  
+    margin-top: -210px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;  
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #333;  
+}
+.welcome-section {
+    text-align: center;
+    padding: 100px 0;
+    padding-top: 0 !important;
+    margin-top: -180px;
+}
+
+.welcome-section h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.welcome-section p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: pink;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #ff69b4;
+}
+
+.product-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+} 
+.product-card {
+     
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow:  rgba(0, 0, 0, 0.2); 
+    width: 150px;
+    transition: transform 0.3s ease;
+    flex: 1 1 100%; 
+    max-width: 150px; 
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #FF69B4; 
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(243, 208, 208);
+}
+.footer p {
+    margin-top: 20px;
+    font-size: 0.8rem; 
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+}
+ .hero {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+            align-items: center;
+            text-align: left;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            line-height: 1.2;
+            max-width: 50%;
+        }
+
+        .hero-quote {
+            max-width: 40%;
+            font-style: italic;
+            color:#f6d6d6;
+        }
+
+        .hero-quote p {
+            font-size: 1.2em;
+        }
+
+        .hero-quote span {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: right;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+           
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .feature img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+            border-radius: 100%;
+        }
+
+        .feature h4 {
+            margin-bottom: 10px;
+            color: #f6d6d6;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        .feature p {
+            font-size: 0.9em;
+            color: #E6F2E2;
+        }
+        hr {
+            border: 0.5px solid #333;
+            width: 90%;
+            margin: 20px auto;
+        }
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+.testimonials {
+    padding: 2rem;
+    background-color: #f0f0f0;
+}
+
+.why-choose-monas {
+    padding: 50px 0;
+    text-align: center;
+    
+}
+
+.why-choose-monas h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+
+.why-choose-monas p {
+   
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+
+.featuresss {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.featuress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffdadf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 
+}
+
+.featuress img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.featuress h3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+
+.featured-products img {
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.featured-products-1{
+    background-color: #f2e2e8;
+}
+
+.council-spoken {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+
+.council-spoken .content {
+    max-width: 50%;
+}
+
+.council-spoken h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.council-spoken p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.council-spoken .buttons {
+    display: flex;
+    gap: 15px;
+}
+.learn-more {
+    background-color: rgba(231,191,31,255);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.learn-more:hover {
+    background-color:#d0ab18 ;
+}
+
+.shop-now {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.shop-now:hover {
+    background-color: #f0f0f0;
+}
+
+.council-spoken .image {
+    max-width: 45%;
+}
+
+.council-spoken .image img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: transparent; 
+}
+.btn {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); 
+    
+}
+.login-btn {
+    background: linear-gradient(45deg, #FF69B4, #FF1493); 
+    margin-top: -320px;
+}
+
+.login-btn:hover {
+    background: linear-gradient(45deg, #FF1493, #FF69B4); 
+    box-shadow: 0px 8px 20px rgba(255, 105, 180, 0.5);
+    transform: scale(1.05);
+}
+
+.signup-btn {
+    background: linear-gradient(45deg, #6A5ACD, #483D8B);
+    margin-top: -320px;
+}
+
+.signup-btn:hover {
+    background: linear-gradient(45deg, #483D8B, #6A5ACD); 
+    box-shadow: 0px 8px 20px rgba(106, 90, 205, 0.5);
+    transform: scale(1.05);
+}
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    display: none; 
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+}
+.sidebar {
+    height: 100%;
+    width: 0; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    transition: 0.3s; 
+    padding-top: 60px; 
+    z-index: 9;
+}
+
+.sidebar a {
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+
+.content {
+    padding: 20px;
+    margin-left: 50px;
+}
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .sidebar {
+        width: 0;
+    }
+}
+    @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+            }
+
+            .hero h1, .hero-quote {
+                font-size: 1.5rem;
+            }
+
+            .products {
+                flex-direction: column;
+            }
+
+            .btn {
+                padding: 10px 20px;
+            }
+        }
+body {
+    font-size: 16px;
+    margin: 0;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+}
+html {
+    scroll-behavior: smooth; 
+}
+
+
+
+    </style>
+      <div class="menu-icon" onclick="toggleSidebar()">&#9776;</div>
+      <nav class="sidebar" id="sidebar">
+          <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+          <a href="index.html">Accueil</a>
+          <a href="/pages/propos.html">À propos</a>
+          <a href="/pages/conatct.html">Contact</a>
+      </nav>
+    <header>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="/pages/propos.html">À propos</a></li>
+            <li><a href="/pages/conatct.html">Contact</a></li>
+        </ul>
+        <div class="button-container">
+            <a href="pages/login.html" class="btn login-btn">Log In</a>
+            <a href="pages/sing up.html" class="btn signup-btn">Sign Up</a>
+        </div>
+
+    </nav>
+    <section class="welcome-section">
+        <h1>Welcome in Beauty Life</h1>
+        <p>Discover the best beauty products for your life</p>
+        <button class="cta-button" >decouvez nos Produit</a></button>
+    </section>
+    </header>
+    <div class="hero">
+        <h1>Revitalize Your Skin with Our Nourishing and Hydrating Skincare Box</h1>
+        <div class="hero-quote">
+            <p>By taking care of your skin every day, you can invest in your future and ensure that your skin will remain healthy and youthful for years to come.</p>
+            <span>– Your Shine Professional</span>
+        </div>
+    </div>
+    <hr>
+    <div class="features">
+        <div class="feature">
+            <img src="/img/icon1.webp" alt="Everyday Skincare">
+            <h4>Everyday Skincare</h4>
+            <p>Our cosmetics are suitable for women with any skin type.</p>
+        </div>
+        <div class="feature">
+            <img src="/img/icon2.webp" alt="Organic Ingredients">
+            <h4>Organic Ingredients</h4>
+            <p>We use only natural ingredients. Our products are cruelty-free.</p>
+        </div>
+        <div class="feature">
+            <img src="/img/icon3.webp" alt="Skin Hydration">
+            <h4>Skin Hydration</h4>
+            <p>Fill your skin with moisture and radiance with our products.</p>
+        </div>
+    </div>
+    <section class="product-section">
+        <h1>Nos Produits</h1>
+        <div class="products">
+            <div class="product-card">
+                <img src="/img/m8.webp" alt="Produit 1">
+            </div>
+            <div class="product-card">
+                <img src="/img/m7.webp" alt="Produit 2">
+            </div>
+            <div class="product-card">
+                <img src="/img/m6.webp" alt="Produit 3">
+        </div>
+    </section>
+    <section class="why-choose-monas">
+        <div class="container">
+            <h2>Why Choose-us?</h2>
+            <p>Whether you have dry, oily, sensitive, or combination skin, our skincare experts are here to help you find the perfect products for your individual needs.</p>
+            <div class="featuresss">
+                <div class="featuress">
+                    <img src="/img/solution.png" alt="Personalized Solutions">
+                    <h3>Personalized Solutions</h3>
+                </div>
+                <div class="featuress">
+                    <img src="/img/growth.png" alt="Natural Ingredients">
+                    <h3>Natural Ingredients</h3>
+                </div>
+                <div class="featuress">
+                    <img src="/img/pen.png" alt="Effective Results">
+                    <h3>Effective Results</h3>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <section class="council-spoken">
+        <div class="content">
+            <h1>The Council Has Spoken</h1>
+            <p>We’re here to make daily routines better for your body and better for our planet—because small change can make a big impact. Through our membership, we will be supporting the Skin Cancer Foundation’s work which provides the tools + education you need to prevent.</p>
+            <div class="buttons">
+                <a href="#" class="btn learn-more">Learn More</a>
+                <a href="pages/shop.html" class="btn shop-now">Shop Now</a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="/img/m1.webp" alt="Man with Skincare Cream" />
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><img src="/img/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/webweaver08/"><img src="/img/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/img/twitter.png" alt="Twitter"></a>
+        </div>
+    <p>&copy; 2024 Beauty Life. All rights reserved.</p>
+    <P> devloped by oumnia selmane</P>
+    </footer>
+<script src="pages/index.js"></script>
+</body>
+</html>
